@@ -67,7 +67,7 @@ def isPalindrome(self, s:str) -> bool:
 def isPalindrome(self, s:str) -> bool:
     s = s.lower()
 
-    s= re.sub('[^a-z0-9]','',s)
+    s= re.sub('[^a-z0-9]','',s) #파이썬 정규 표현식
 
     return s == s[::-1] #슬라이싱
 
