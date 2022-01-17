@@ -11,6 +11,7 @@ def anagrams (group:List[str]) -> None:
 
    for word in group:
        anagrams[''.join(sorted(word))].append(word)
+
    return list(anagrams.values())
 
 anagrams(["eat","tea","tan","ate","nat","bat"])
